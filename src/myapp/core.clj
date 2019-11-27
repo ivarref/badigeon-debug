@@ -1,8 +1,8 @@
 (ns myapp.core
   (:require
-    [byte-streams :as bs])
+    [clojure.tools.logging :as log])
   (:gen-class)
   (:import (java.nio ByteBuffer)))
 
 (defn -main [& args]
-  (println (bs/convert "asdf" ByteBuffer)))
+  (println #_(bs/convert "asdf" ByteBuffer)))

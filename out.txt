@@ -1,145 +1,138 @@
-Compiled from "char_sequence.clj"
-public final class byte_streams.char_sequence$decode_byte_source extends clojure.lang.AFunction {
+Compiled from "logging.clj"
+public final class clojure.tools.logging$log_STAR_ extends clojure.lang.AFunction {
   public static final clojure.lang.Var const__0;
 
-  public static final clojure.lang.Var const__1;
+  public static final clojure.lang.Keyword const__1;
 
-  public static final clojure.lang.Keyword const__3;
+  public static final clojure.lang.Keyword const__2;
 
-  public static final java.lang.Object const__4;
+  public static final clojure.lang.Var const__3;
 
-  public static final clojure.lang.Keyword const__5;
+  public static final clojure.lang.Var const__4;
 
-  public static final clojure.lang.Keyword const__6;
+  public static final clojure.lang.Var const__5;
 
-  public static final clojure.lang.Keyword const__7;
+  public static final clojure.lang.Var const__6;
 
-  public static final clojure.lang.Var const__8;
-
-  public static final clojure.lang.Var const__9;
-
-  public static final clojure.lang.AFn const__14;
-
-  public byte_streams.char_sequence$decode_byte_source();
+  public clojure.tools.logging$log_STAR_();
     Code:
        0: aload_0
-       1: invokespecial #9                  // Method clojure/lang/AFunction."<init>":()V
+       1: invokespecial #11                 // Method clojure/lang/AFunction."<init>":()V
        4: return
 
-  public static java.lang.Object invokeStatic(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.Object invokeStatic(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object);
     Code:
-       0: aload_2
-       1: aconst_null
-       2: astore_2
-       3: astore_3
-       4: getstatic     #15                 // Field const__0:Lclojure/lang/Var;
-       7: invokevirtual #21                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
-      10: checkcast     #23                 // class clojure/lang/IFn
-      13: aload_3
-      14: invokeinterface #27,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
-      19: dup
-      20: ifnull        55
-      23: getstatic     #33                 // Field java/lang/Boolean.FALSE:Ljava/lang/Boolean;
-      26: if_acmpeq     56
-      29: getstatic     #36                 // Field const__1:Lclojure/lang/Var;
-      32: invokevirtual #21                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
-      35: checkcast     #23                 // class clojure/lang/IFn
-      38: aload_3
-      39: aconst_null
-      40: astore_3
-      41: invokeinterface #27,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
-      46: checkcast     #38                 // class clojure/lang/ISeq
-      49: invokestatic  #44                 // Method clojure/lang/PersistentHashMap.create:(Lclojure/lang/ISeq;)Lclojure/lang/PersistentHashMap;
-      52: goto          59
-      55: pop
-      56: aload_3
-      57: aconst_null
-      58: astore_3
-      59: astore        4
-      61: aload         4
-      63: getstatic     #48                 // Field const__3:Lclojure/lang/Keyword;
-      66: getstatic     #52                 // Field const__4:Ljava/lang/Object;
-      69: invokestatic  #57                 // Method clojure/lang/RT.get:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-      72: astore        5
-      74: aload         4
-      76: getstatic     #60                 // Field const__5:Lclojure/lang/Keyword;
-      79: ldc           #62                 // String UTF-8
-      81: invokestatic  #57                 // Method clojure/lang/RT.get:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-      84: astore        6
-      86: aload         4
-      88: aconst_null
-      89: astore        4
-      91: getstatic     #65                 // Field const__6:Lclojure/lang/Keyword;
-      94: getstatic     #68                 // Field const__7:Lclojure/lang/Keyword;
-      97: invokestatic  #57                 // Method clojure/lang/RT.get:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-     100: astore        7
-     102: getstatic     #71                 // Field const__8:Lclojure/lang/Var;
-     105: invokevirtual #21                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
-     108: checkcast     #23                 // class clojure/lang/IFn
-     111: aload         7
-     113: aconst_null
-     114: astore        7
-     116: invokeinterface #27,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
-     121: astore        8
-     123: aload         6
-     125: aconst_null
-     126: astore        6
-     128: checkcast     #73                 // class java/lang/String
-     131: invokestatic  #79                 // Method java/nio/charset/Charset.forName:(Ljava/lang/String;)Ljava/nio/charset/Charset;
-     134: checkcast     #75                 // class java/nio/charset/Charset
-     137: invokevirtual #83                 // Method java/nio/charset/Charset.newDecoder:()Ljava/nio/charset/CharsetDecoder;
-     140: astore        9
-     142: aload         9
-     144: checkcast     #85                 // class java/nio/charset/CharsetDecoder
-     147: aload         8
-     149: checkcast     #87                 // class java/nio/charset/CodingErrorAction
-     152: invokevirtual #91                 // Method java/nio/charset/CharsetDecoder.onMalformedInput:(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;
-     155: pop
-     156: aload         9
-     158: checkcast     #85                 // class java/nio/charset/CharsetDecoder
-     161: aload         8
-     163: aconst_null
-     164: astore        8
-     166: checkcast     #87                 // class java/nio/charset/CodingErrorAction
-     169: invokevirtual #94                 // Method java/nio/charset/CharsetDecoder.onUnmappableCharacter:(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetDecoder;
-     172: pop
-     173: aload         9
-     175: aconst_null
-     176: astore        9
-     178: astore        9
-     180: getstatic     #98                 // Field const__9:Lclojure/lang/Var;
-     183: invokevirtual #21                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
-     186: checkcast     #23                 // class clojure/lang/IFn
-     189: aload         9
-     191: aconst_null
-     192: astore        9
-     194: aload         5
-     196: aconst_null
-     197: astore        5
-     199: aconst_null
-     200: aload_1
-     201: aload_0
-     202: aconst_null
-     203: astore_0
-     204: invokeinterface #101,  6          // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-     209: astore        10
-     211: new           #103                // class byte_streams/char_sequence$decode_byte_source$reify__3134
-     214: dup
-     215: aconst_null
-     216: aload         10
-     218: aconst_null
-     219: astore        10
-     221: aload_1
-     222: aconst_null
-     223: astore_1
-     224: invokespecial #106                // Method byte_streams/char_sequence$decode_byte_source$reify__3134."<init>":(Lclojure/lang/IPersistentMap;Ljava/lang/Object;Ljava/lang/Object;)V
-     227: checkcast     #108                // class clojure/lang/IObj
-     230: getstatic     #112                // Field const__14:Lclojure/lang/AFn;
-     233: checkcast     #114                // class clojure/lang/IPersistentMap
-     236: invokeinterface #118,  2          // InterfaceMethod clojure/lang/IObj.withMeta:(Lclojure/lang/IPersistentMap;)Lclojure/lang/IObj;
-     241: areturn
+       0: getstatic     #17                 // Field const__0:Lclojure/lang/Var;
+       3: invokevirtual #23                 // Method clojure/lang/Var.get:()Ljava/lang/Object;
+       6: astore        4
+       8: aload         4
+      10: invokestatic  #29                 // Method clojure/lang/Util.hash:(Ljava/lang/Object;)I
+      13: iconst_0
+      14: ishr
+      15: iconst_1
+      16: iand
+      17: tableswitch   { // 0 to 1
+                     0: 40
+                     1: 54
+               default: 68
+          }
+      40: aload         4
+      42: getstatic     #33                 // Field const__1:Lclojure/lang/Keyword;
+      45: if_acmpne     68
+      48: getstatic     #39                 // Field java/lang/Boolean.TRUE:Ljava/lang/Boolean;
+      51: goto          111
+      54: aload         4
+      56: getstatic     #42                 // Field const__2:Lclojure/lang/Keyword;
+      59: if_acmpne     68
+      62: getstatic     #45                 // Field java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+      65: goto          111
+      68: invokestatic  #51                 // Method clojure/lang/LockingTransaction.isRunning:()Z
+      71: istore        5
+      73: iload         5
+      75: ifeq          97
+      78: getstatic     #54                 // Field const__3:Lclojure/lang/Var;
+      81: invokevirtual #23                 // Method clojure/lang/Var.get:()Ljava/lang/Object;
+      84: checkcast     #56                 // class clojure/lang/IFn
+      87: aload_1
+      88: invokeinterface #60,  2           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;)Ljava/lang/Object;
+      93: goto          111
+      96: athrow
+      97: iload         5
+      99: ifeq          108
+     102: getstatic     #39                 // Field java/lang/Boolean.TRUE:Ljava/lang/Boolean;
+     105: goto          111
+     108: getstatic     #45                 // Field java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+     111: dup
+     112: ifnull        164
+     115: getstatic     #45                 // Field java/lang/Boolean.FALSE:Ljava/lang/Boolean;
+     118: if_acmpeq     165
+     121: getstatic     #67                 // Field const__4:Lclojure/lang/Var;
+     124: invokevirtual #70                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+     127: checkcast     #56                 // class clojure/lang/IFn
+     130: getstatic     #73                 // Field const__5:Lclojure/lang/Var;
+     133: invokevirtual #23                 // Method clojure/lang/Var.get:()Ljava/lang/Object;
+     136: new           #75                 // class clojure/tools/logging$log_STAR_$fn__277
+     139: dup
+     140: aload_3
+     141: aconst_null
+     142: astore_3
+     143: aload_2
+     144: aconst_null
+     145: astore_2
+     146: aload_1
+     147: aconst_null
+     148: astore_1
+     149: aload_0
+     150: aconst_null
+     151: astore_0
+     152: invokespecial #78                 // Method clojure/tools/logging$log_STAR_$fn__277."<init>":(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+     155: invokeinterface #81,  3           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     160: pop
+     161: goto          234
+     164: pop
+     165: aload_0
+     166: aconst_null
+     167: astore_0
+     168: dup
+     169: invokestatic  #85                 // Method clojure/lang/Util.classOf:(Ljava/lang/Object;)Ljava/lang/Class;
+     172: getstatic     #87                 // Field __cached_class__0:Ljava/lang/Class;
+     175: if_acmpeq     192
+     178: dup
+     179: instanceof    #89                 // class clojure/tools/logging/impl/Logger
+     182: ifne          216
+     185: dup
+     186: invokestatic  #85                 // Method clojure/lang/Util.classOf:(Ljava/lang/Object;)Ljava/lang/Class;
+     189: putstatic     #87                 // Field __cached_class__0:Ljava/lang/Class;
+     192: getstatic     #92                 // Field const__6:Lclojure/lang/Var;
+     195: invokevirtual #70                 // Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+     198: swap
+     199: aload_1
+     200: aconst_null
+     201: astore_1
+     202: aload_2
+     203: aconst_null
+     204: astore_2
+     205: aload_3
+     206: aconst_null
+     207: astore_3
+     208: invokeinterface #94,  5           // InterfaceMethod clojure/lang/IFn.invoke:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     213: goto          233
+     216: checkcast     #89                 // class clojure/tools/logging/impl/Logger
+     219: aload_1
+     220: aconst_null
+     221: astore_1
+     222: aload_2
+     223: aconst_null
+     224: astore_2
+     225: aload_3
+     226: aconst_null
+     227: astore_3
+     228: invokeinterface #98,  4           // InterfaceMethod clojure/tools/logging/impl/Logger.write_BANG_:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     233: pop
+     234: aconst_null
+     235: areturn
 
-  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object);
     Code:
        0: aload_1
        1: aconst_null
@@ -150,80 +143,48 @@ public final class byte_streams.char_sequence$decode_byte_source extends clojure
        6: aload_3
        7: aconst_null
        8: astore_3
-       9: invokestatic  #132                // Method invokeStatic:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-      12: areturn
+       9: aload         4
+      11: aconst_null
+      12: astore        4
+      14: invokestatic  #108                // Method invokeStatic:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      17: areturn
 
   public static {};
     Code:
-       0: ldc           #135                // String clojure.core
-       2: ldc           #137                // String seq?
-       4: invokestatic  #141                // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
-       7: checkcast     #17                 // class clojure/lang/Var
-      10: putstatic     #15                 // Field const__0:Lclojure/lang/Var;
-      13: ldc           #135                // String clojure.core
-      15: ldc           #143                // String seq
-      17: invokestatic  #141                // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
-      20: checkcast     #17                 // class clojure/lang/Var
-      23: putstatic     #36                 // Field const__1:Lclojure/lang/Var;
-      26: aconst_null
-      27: ldc           #145                // String chunk-size
-      29: invokestatic  #149                // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
-      32: checkcast     #151                // class clojure/lang/Keyword
-      35: putstatic     #48                 // Field const__3:Lclojure/lang/Keyword;
-      38: ldc2_w        #152                // long 1024l
-      41: invokestatic  #159                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
-      44: putstatic     #52                 // Field const__4:Ljava/lang/Object;
-      47: aconst_null
-      48: ldc           #160                // String encoding
-      50: invokestatic  #149                // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
-      53: checkcast     #151                // class clojure/lang/Keyword
-      56: putstatic     #60                 // Field const__5:Lclojure/lang/Keyword;
-      59: aconst_null
-      60: ldc           #162                // String on-encoding-error
-      62: invokestatic  #149                // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
-      65: checkcast     #151                // class clojure/lang/Keyword
-      68: putstatic     #65                 // Field const__6:Lclojure/lang/Keyword;
-      71: aconst_null
-      72: ldc           #164                // String replace
-      74: invokestatic  #149                // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
-      77: checkcast     #151                // class clojure/lang/Keyword
-      80: putstatic     #68                 // Field const__7:Lclojure/lang/Keyword;
-      83: ldc           #166                // String byte-streams.char-sequence
-      85: ldc           #168                // String coding-error-action
-      87: invokestatic  #141                // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
-      90: checkcast     #17                 // class clojure/lang/Var
-      93: putstatic     #71                 // Field const__8:Lclojure/lang/Var;
-      96: ldc           #166                // String byte-streams.char-sequence
-      98: ldc           #170                // String lazy-char-buffer-sequence
-     100: invokestatic  #141                // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
-     103: checkcast     #17                 // class clojure/lang/Var
-     106: putstatic     #98                 // Field const__9:Lclojure/lang/Var;
-     109: iconst_4
-     110: anewarray     #130                // class java/lang/Object
-     113: dup
-     114: iconst_0
-     115: aconst_null
-     116: ldc           #172                // String line
-     118: invokestatic  #149                // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
-     121: aastore
-     122: dup
-     123: iconst_1
-     124: bipush        101
-     126: invokestatic  #177                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-     129: aastore
-     130: dup
-     131: iconst_2
-     132: aconst_null
-     133: ldc           #179                // String column
-     135: invokestatic  #149                // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
-     138: aastore
-     139: dup
-     140: iconst_3
-     141: iconst_5
-     142: invokestatic  #177                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-     145: aastore
-     146: invokestatic  #183                // Method clojure/lang/RT.map:([Ljava/lang/Object;)Lclojure/lang/IPersistentMap;
-     149: checkcast     #185                // class clojure/lang/AFn
-     152: putstatic     #112                // Field const__14:Lclojure/lang/AFn;
-     155: return
+       0: ldc           #111                // String clojure.tools.logging
+       2: ldc           #113                // String *force*
+       4: invokestatic  #119                // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+       7: checkcast     #19                 // class clojure/lang/Var
+      10: putstatic     #17                 // Field const__0:Lclojure/lang/Var;
+      13: aconst_null
+      14: ldc           #121                // String agent
+      16: invokestatic  #125                // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
+      19: checkcast     #127                // class clojure/lang/Keyword
+      22: putstatic     #33                 // Field const__1:Lclojure/lang/Keyword;
+      25: aconst_null
+      26: ldc           #129                // String direct
+      28: invokestatic  #125                // Method clojure/lang/RT.keyword:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Keyword;
+      31: checkcast     #127                // class clojure/lang/Keyword
+      34: putstatic     #42                 // Field const__2:Lclojure/lang/Keyword;
+      37: ldc           #111                // String clojure.tools.logging
+      39: ldc           #131                // String *tx-agent-levels*
+      41: invokestatic  #119                // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+      44: checkcast     #19                 // class clojure/lang/Var
+      47: putstatic     #54                 // Field const__3:Lclojure/lang/Var;
+      50: ldc           #133                // String clojure.core
+      52: ldc           #135                // String send-off
+      54: invokestatic  #119                // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+      57: checkcast     #19                 // class clojure/lang/Var
+      60: putstatic     #67                 // Field const__4:Lclojure/lang/Var;
+      63: ldc           #111                // String clojure.tools.logging
+      65: ldc           #137                // String *logging-agent*
+      67: invokestatic  #119                // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+      70: checkcast     #19                 // class clojure/lang/Var
+      73: putstatic     #73                 // Field const__5:Lclojure/lang/Var;
+      76: ldc           #139                // String clojure.tools.logging.impl
+      78: ldc           #141                // String write!
+      80: invokestatic  #119                // Method clojure/lang/RT.var:(Ljava/lang/String;Ljava/lang/String;)Lclojure/lang/Var;
+      83: checkcast     #19                 // class clojure/lang/Var
+      86: putstatic     #92                 // Field const__6:Lclojure/lang/Var;
+      89: return
 }

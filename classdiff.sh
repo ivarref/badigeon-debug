@@ -6,8 +6,8 @@ clojure -A:build -m package
 
 #diff --brief --recursive target/classes-1 target/classes-2 | head -n10
 
-FILE1="target/classes-1/byte_streams/char_sequence\$decode_byte_source.class"
-FILE2="target/classes-2/byte_streams/char_sequence\$decode_byte_source.class"
+FILE1="target/classes-1/clojure/tools/logging\$log_STAR_.class"
+FILE2="target/classes-2/clojure/tools/logging\$log_STAR_.class"
 diff $FILE1 $FILE2 || true
 
 javap -c $FILE1 > out.txt
